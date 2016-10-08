@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=gfactura
+Comment=Programa de gestión de clientes y facturación en Vala y Gtk+
+GenericName=GFactura
+Exec=GFactura %U
+Icon=gfactura
+Terminal=false
+Categories=Office
+Name[es_ES]=gfactura

@@ -1,0 +1,11 @@
+<schemalist>
+  <schema id="org.gtk.gfactura" path="/org/gtk/gfactura/" gettext-domain="gfactura">
+
+    <key name="namekey1" type="s">
+        <default l10n="messages">""</default>
+        <summary>Sumary of app</summary>
+        <description>Description of app</description>
+    </key>
+
+  </schema>
+</schemalist>
