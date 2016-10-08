@@ -1,0 +1,12 @@
+Source: gfactura
+Maintainer: bitseater <bitseater@gmail.com>
+Priority: optional
+Section: misc
+Build-Depends: build-essential, po-debconf, valac, cmake, gettext, desviado por pkgconf de, gcc, g++, make, intltool
+
+Package: gfactura
+Architecture: any
+Version: 0.1
+Depends: 
+Description: Programa de gestión de clientes y facturación en Vala y Gtk+
+ .
