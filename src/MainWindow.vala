@@ -12,10 +12,10 @@
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-* 
+*
 * You should have received a copy of the GNU General Public License
 * along with GFactura. If not, see <http://www.gnu.org/licenses/>.
-* 
+*
 * Author: bitseater <bitseater@gmail.com>
 */
 namespace GFactura {
@@ -42,7 +42,7 @@ namespace GFactura {
         }
 
         private void general_cb (SimpleAction action, Variant? parameter) {
-            //TODO;
+            mainstack.visible_child_name = "general";
         }
 
         private void prefer_cb (SimpleAction action, Variant? parameter) {
@@ -125,6 +125,8 @@ namespace GFactura {
             mainstack.visible_child_name = "welcome";
             var empresa = new GFactura.Widgets.Empresa (app);
             mainstack.add_named (empresa, "empresa");
+            var general = new GFactura.Widgets.General (app);
+            mainstack.add_named (general, "general");
 
             // Footbar
             footbar.pack_start (new Gtk.Label ("Bienvenidos a GFactura"));

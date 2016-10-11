@@ -5,8 +5,8 @@
   <object class="GtkGrid" id="gengrid">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="halign">start</property>
-    <property name="valign">center</property>
+    <property name="halign">center</property>
+    <property name="valign">start</property>
     <property name="margin_left">10</property>
     <property name="margin_right">10</property>
     <property name="margin_top">10</property>
@@ -163,61 +163,37 @@
       </packing>
     </child>
     <child>
-      <placeholder/>
+      <object class="GtkButton" id="g_close">
+        <property name="label">gtk-close</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+        <property name="valign">center</property>
+        <property name="use_stock">True</property>
+        <signal name="clicked" handler="gfactura_widgets_general_on_gen_close" swapped="no"/>
+      </object>
+      <packing>
+        <property name="left_attach">5</property>
+        <property name="top_attach">5</property>
+      </packing>
     </child>
     <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
-    </child>
-    <child>
-      <placeholder/>
+      <object class="GtkButton" id="g_save">
+        <property name="label">gtk-save</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+        <property name="valign">center</property>
+        <property name="use_stock">True</property>
+        <signal name="clicked" handler="gfactura_widgets_general_on_gen_save" swapped="no"/>
+        <style>
+          <class name="suggested-action"/>
+        </style>
+      </object>
+      <packing>
+        <property name="left_attach">6</property>
+        <property name="top_attach">5</property>
+      </packing>
     </child>
   </object>
 </interface>
